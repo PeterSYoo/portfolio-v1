@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  if (window.location.pathname === '/projects-scroll') return null;
+
   return (
     <div className="header">
       <section className="header-logo">

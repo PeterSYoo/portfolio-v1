@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  if (window.location.pathname === '/projects-scroll') return null;
+
   return (
     <div className="nav">
       <Link to="/about">

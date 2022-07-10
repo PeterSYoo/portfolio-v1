@@ -16,7 +16,7 @@ const Projects = () => {
       <iframe
         className="projects-scroll--iframe"
         src="/projects-scroll"
-        width="689"
+        width="688"
         height="100%"
         frameborder="0"
       >

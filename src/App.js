@@ -13,7 +13,9 @@ const App = () => {
 
   return (
     <div className="App">
-      {location.pathname === '/projects' || '/projects-scroll' ? null : <Header />}
+      <header>
+        {location.pathname === '/projects' ? null : <Header />}
+      </header>
       <main>
         <Routes>
           <Route path="/" element={<Home />} exact/>
@@ -23,7 +25,9 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      {location.pathname === '/projects' || '/projects-scroll' ? null : <Navbar />}
+      <footer>
+        {location.pathname === '/projects' ? null : <Navbar />}
+      </footer>
     </div>
   );
 }
