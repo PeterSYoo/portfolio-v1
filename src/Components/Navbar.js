@@ -1,9 +1,17 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <div className="nav">
-      <section className="nav-links--about">about</section>
-      <section className="nav-links--projects">projects</section>
-      <section className="nav-links--contact">contact</section>
+      <Link to="/about">
+        <section className="nav-links--about">about</section>
+      </Link>
+      <Link to="/projects">
+        <section className="nav-links--projects">projects</section>
+      </Link>
+      <Link to="/contact">
+        <section className="nav-links--contact">contact</section>
+      </Link>
     </div>
   )
 }

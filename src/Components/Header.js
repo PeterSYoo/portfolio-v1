@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom';
+
 const Header = () => {
   return (
     <div className="header">
       <section className="header-logo">
-        <img src="https://i.imgur.com/2NOaXQD.png" alt="logo" />
+        <Link to="/">
+          <img src="https://i.imgur.com/2NOaXQD.png" alt="logo" />
+        </Link>
       </section>
       <section className="header-icons">
         <section className="header-icons--github">
