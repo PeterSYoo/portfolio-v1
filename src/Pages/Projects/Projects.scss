@@ -17,7 +17,7 @@
 }
 
 .projects-logo--icon {
-  padding: 80px 80px 0 80px;
+  padding: 44px 80px 0 80px;
 }
 
 .project-scroll--iframe {
@@ -27,19 +27,28 @@
 .projects-scroll {  
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 250px 250px 250px 250px;
+  grid-template-rows: 139px 250px 250px 250px 250px 250px 250px 250px auto;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
+    "projects-scroll--br projects-scroll--br"
     "projects-scroll--1 projects-scroll--1"
     "projects-scroll--2 projects-scroll--2"
     "projects-scroll--3 projects-scroll--3"
-    "projects-scroll--4 projects-scroll--4";
+    "projects-scroll--4 projects-scroll--4"
+    "projects-scroll--5 projects-scroll--5"
+    "projects-scroll--6 projects-scroll--6"
+    "projects-scroll--7 projects-scroll--7"
+    "projects-scroll--br-2 projects-scroll--br-2";
   grid-area: projects-scroll;
   border-left: 4px solid #F6F6F6;
   border-right: 4px solid #F6F6F6;
   margin: 0;
   min-height: 100%;
+}
+
+.projects-scroll--br { 
+  grid-area: projects-scroll--br; 
 }
 
 .projects-scroll--1 { 
@@ -57,6 +66,24 @@
 
 .projects-scroll--4 { 
   grid-area: projects-scroll--4; 
+  text-align: right;
+}
+
+.projects-scroll--5 { 
+  grid-area: projects-scroll--5; 
+}
+
+.projects-scroll--6 { 
+  grid-area: projects-scroll--6; 
+  text-align: right;
+}
+
+.projects-scroll--7 { 
+  grid-area: projects-scroll--7; 
+}
+
+.projects-scroll--br-2 { 
+  grid-area: projects-scroll--br-2; 
 }
 
 .projects-right-column {  
