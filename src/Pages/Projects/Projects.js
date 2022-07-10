@@ -1,7 +1,9 @@
 const Projects = () => {
   return (
-    <div className="projects">
-      Projects
+    <div className="projects-wrapper">
+      <div className="projects">
+
+      </div>
     </div>
   )
 }

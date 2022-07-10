@@ -1,16 +1,18 @@
 import './App.scss';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './Components/Header';
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
-import Projects from './Pages/Projects/Projects';
 import Contact from './Pages/Contact/Contact';
+import Projects from './Pages/Projects/Projects';
 
 const App = () => {
+  const location = useLocation();
+
   return (
     <div className="App">
-      <Header />
+      {location.pathname === '/projects' ? null : <Header />}
       <main>
         <Routes>
           <Route path="/" element={<Home />} exact/>
@@ -19,7 +21,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
-      <Navbar />
+      {location.pathname === '/projects' ? null : <Navbar />}
     </div>
   );
 }
