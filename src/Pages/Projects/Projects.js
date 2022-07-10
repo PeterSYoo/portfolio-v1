@@ -1,5 +1,4 @@
 import Navbar from '../../Components/Navbar';
-import ProjectsScroll from './ProjectsScroll';
 import { Link } from 'react-router-dom'
 import './Projects.scss'
 
