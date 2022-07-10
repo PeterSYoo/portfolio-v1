@@ -1,0 +1,41 @@
+.App {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 80px 1.3fr 80px; 
+  grid-template-rows: 0.3fr 800px 0.2fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "main main main"
+    "nav nav nav"; 
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 80px 0 80px;
+}
+
+.header-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-icons--github {
+  padding-right: 50px;
+}
+
+main { 
+  grid-area: main; 
+}
+
+.nav { 
+  grid-area: nav; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25em;
+  gap: 60px;
+}
