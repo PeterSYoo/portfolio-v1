@@ -1,9 +1,12 @@
 import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import Header from './Components/Header';
+import Navbar from './Components/Navbar';
 
 const App = () => {
   return (
     <div className="App">
-      <h1>My Portfolio</h1>
+      
     </div>
   );
 }
