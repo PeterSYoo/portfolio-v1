@@ -1,5 +1,5 @@
-import Header from '../../Components/Header';
 import Navbar from '../../Components/Navbar';
+import ProjectsScroll from './ProjectsScroll';
 import { Link } from 'react-router-dom'
 import './Projects.scss'
 
@@ -13,14 +13,14 @@ const Projects = () => {
           </Link>
         </div>
       </section>
-      <section className="projects-scroll">
-        <div className="projects-scroll--1">
-        </div>
-        <div className="projects-scroll--2">
-        </div>
-        <div className="projects-scroll--3">
-        </div>
-      </section>
+      <iframe
+        className="projects-scroll--iframe"
+        src="/projects-scroll"
+        width="689"
+        height="100%"
+        frameborder="0"
+      >
+      </iframe>
       <section className="projects-right-column">
         <div className="projects-right-column--icons">
           <div className="projects-right-column--icons-github">
@@ -31,7 +31,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="projects-right-column--name">
-
+          <h1>Projects</h1>
         </div>
         <div className="projects-right-column--nav">
           <Navbar />
