@@ -1,14 +1,34 @@
 .home-wrapper {
-  display: flex;
-  justify-content: center;
-  padding-top: 150px;
+  .header {
+    background-color: #252422;
+  }
 
-  h1 {
-    font-size: 4em;
+  .home-intro {
+    padding: 20vh 0 0 0;
+    text-align: center;
+    background-color: #252422;
+  }
+
+  .home--avatar {
+    margin: 0 0 25px 0;
+  }
+
+  .home--name {
+    color: #e1e1eb;
+    font-size: 40px;
+  }
+
+  .home--title {
+    font-size: 40px;
     text-align: center;
   }
 
-  .home-intro--name {
-    color: #f0bf42;
+  .nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.25em;
+    gap: 60px;
+    padding-bottom: 44px;
   }
 }

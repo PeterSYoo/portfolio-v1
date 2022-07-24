@@ -5,15 +5,19 @@ import Navbar from './Components/Navbar';
 import AnimatedRoutes from './AnimatedRoutes';
 
 const App = () => {
-  const location = useLocation();
+  let location = useLocation().pathname;
 
   return (
     <div className="App">
-      <header>{location.pathname === '/projects' ? null : <Header />}</header>
+      <header>
+        {location === '/projects' || location === '/' ? null : <Header />}
+      </header>
       <main>
         <AnimatedRoutes />
       </main>
-      <footer>{location.pathname === '/projects' ? null : <Navbar />}</footer>
+      <footer>
+        {location === '/projects' || location === '/' ? null : <Navbar />}
+      </footer>
     </div>
   );
 };

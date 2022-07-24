@@ -14,8 +14,9 @@ const Navbar = () => {
       <Link to="/contact">
         <section className="nav-links--contact">contact</section>
       </Link>
+      <section className="nav-links--resume">resume</section>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
