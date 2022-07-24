@@ -1,13 +1,19 @@
-import './Contact.scss'
+import './Contact.scss';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <motion.div
+      className="contact"
+      initial={{ width: 0 }}
+      animate={{ width: '80vw' }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.01 } }}
+    >
       <section className="contact-content">
         <h1>Contact</h1>
       </section>
-    </div>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default Contact
+export default Contact;
