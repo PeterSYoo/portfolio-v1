@@ -1,12 +1,12 @@
 .App {
-  display: grid; 
-  grid-template-columns: 80px 1.3fr 80px; 
-  grid-template-rows: auto 1fr auto; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "header header header"
-    "main main main"
-    "nav nav nav"; 
+  display: grid;
+  grid-template-columns: 80px 1.3fr 80px;
+  grid-template-rows: auto 1fr auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'nav nav nav';
   min-height: 100vh;
 }
 
@@ -29,12 +29,12 @@ header {
   padding-right: 50px;
 }
 
-main { 
-  grid-area: main; 
+main {
+  grid-area: main;
 }
 
-footer { 
-  grid-area: nav; 
+footer {
+  grid-area: nav;
 }
 
 .nav {
@@ -45,6 +45,7 @@ footer {
   font-size: 1.25em;
   gap: 60px;
   padding-bottom: 44px;
+  z-index: 1;
 }
 
 /* unvisited link */

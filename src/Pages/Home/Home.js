@@ -1,6 +1,8 @@
 import './Home.scss';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Navbar from '../../Components/Navbar';
+import Particle from '../../Components/Particle';
 
 const Home = () => {
   return (
@@ -8,56 +10,52 @@ const Home = () => {
       className="home-wrapper"
       initial={{ width: 0 }}
       animate={{ width: '100vw' }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.01 } }}
+      exit={{
+        x: window.innerWidth,
+        transition: { duration: 0.25 },
+      }}
     >
-      <div className="header">
-        <section className="header-logo">
-          <Link to="/">
-            <img src="https://i.imgur.com/IMEfuBC.png" alt="logo" />
-          </Link>
-        </section>
-        <section className="header-icons">
-          <section className="header-icons--github">
-            <a
-              href="https://github.com/PeterSYoo"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="https://i.imgur.com/ROsWHrE.png" alt="github" />
-            </a>
+      <div className="home-top--wrapper">
+        <Particle />
+        <div className="header">
+          <section className="header-logo">
+            <Link to="/">
+              {/* <img src="https://i.imgur.com/IMEfuBC.png" alt="logo" /> */}
+              <font className="header-logo--type">PY</font>
+            </Link>
           </section>
-          <section className="header-icons--linkedin">
-            <a
-              href="https://www.linkedin.com/in/petersyoo/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="https://i.imgur.com/h5dmhHV.png" alt="linkedin" />
-            </a>
+          <section className="header-icons">
+            <section className="header-icons--github">
+              <a
+                href="https://github.com/PeterSYoo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="https://i.imgur.com/MSzHASX.png" alt="github" />
+              </a>
+            </section>
+            <section className="header-icons--linkedin">
+              <a
+                href="https://www.linkedin.com/in/petersyoo/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="https://i.imgur.com/6qF85FA.png" alt="linkedin" />
+              </a>
+            </section>
           </section>
-        </section>
-      </div>
-      <section className="home">
+        </div>
         <div className="home-intro">
           <div className="home--avatar">
-            <img src="https://i.imgur.com/Zjs4HUP.png" alt="avatar" />
+            <img src="https://i.imgur.com/WEtpP6J.png" alt="avatar" />
           </div>
-          <font className="home--name">Hi! I am Peter Yoo</font>
+          Hi! I am <font className="home--name">Peter Yoo</font>
         </div>
-        <div className="home--title">a Software Engineer</div>
-      </section>
-      <div className="nav">
-        <Link to="/about">
-          <section className="nav-links--about">about</section>
-        </Link>
-        <Link to="/projects">
-          <section className="nav-links--projects">projects</section>
-        </Link>
-        <Link to="/contact">
-          <section className="nav-links--contact">contact</section>
-        </Link>
-        <section className="nav-links--resume">resume</section>
       </div>
+      <section className="home-bottom--wrapper">
+        <div className="home--title">a software engineer</div>
+      </section>
+      <Navbar />
     </motion.div>
   );
 };

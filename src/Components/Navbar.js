@@ -6,15 +6,15 @@ const Navbar = () => {
   return (
     <div className="nav">
       <Link to="/about">
-        <section className="nav-links--about">about</section>
+        <section className="nav-links--about">ABOUT</section>
       </Link>
       <Link to="/projects">
-        <section className="nav-links--projects">projects</section>
+        <section className="nav-links--projects">PROJECTS</section>
       </Link>
       <Link to="/contact">
-        <section className="nav-links--contact">contact</section>
+        <section className="nav-links--contact">CONTACT</section>
       </Link>
-      <section className="nav-links--resume">resume</section>
+      <section className="nav-links--resume">RESUME</section>
     </div>
   );
 };

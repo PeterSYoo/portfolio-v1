@@ -1,21 +1,59 @@
 .home-wrapper {
-  .header {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  .home-top--wrapper {
     background-color: #252422;
+  }
+
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+  }
+
+  .header-logo--type {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: -3px;
+    color: #85b5e2;
   }
 
   .home-intro {
-    padding: 20vh 0 0 0;
+    padding: 12vh 0 10px 0;
     text-align: center;
     background-color: #252422;
+    color: #85b5e2;
+    font-size: 40px;
   }
 
   .home--avatar {
+    position: relative;
+    z-index: 1;
     margin: 0 0 25px 0;
   }
 
   .home--name {
     color: #e1e1eb;
     font-size: 40px;
+  }
+
+  .home-bottom--wrapper {
+    position: relative;
+    z-index: 1;
+    background: rgb(133, 181, 226);
+    background: linear-gradient(
+      142deg,
+      rgba(133, 181, 226, 1) 0%,
+      rgba(8, 19, 60, 1) 100%
+    );
+    height: 100%;
   }
 
   .home--title {
@@ -27,8 +65,31 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 1.25em;
+    font-size: 1.15em;
+    font-weight: 200;
     gap: 60px;
     padding-bottom: 44px;
+    color: #85b5e2;
   }
+}
+
+/* unvisited link */
+a:link {
+  color: #85b5e2;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #85b5e2;
+}
+
+/* mouse over link */
+a:hover {
+  color: #85b5e2;
+}
+
+/* selected link */
+a:active {
+  color: #85b5e2;
 }

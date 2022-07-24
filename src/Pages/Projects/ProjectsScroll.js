@@ -1,35 +1,26 @@
 const ProjectsScroll = () => {
   return (
-    <section className="projects-scroll">
-      <div className="projects-scroll--br">
+    <div className="projects-scroll-wrapper">
+      <div className="projects-scroll">
+        <div className="projects-scroll--br"></div>
+        <div className="project-1--left">
+          <img src="https://i.imgur.com/rQbdowK.png" alt="" />
+        </div>
+        <div className="project-1--right">
+          <font className="project-1--name">Random Lit</font>
+          <font className="project-1--number">1</font>
+        </div>
+        <div className="project-2--left">
+          <font className="project-2--number">2</font>
+          <font className="project-2--name">Tteok Bowl</font>
+        </div>
+        <div className="project-2--right">
+          <img src="https://i.imgur.com/Slr8Z3h.png" alt="" />
+        </div>
+        <div className="projects-scroll--br-2"></div>
       </div>
-      <div className="projects-scroll--1">
-        <img src="https://i.imgur.com/rQbdowK.png" alt="" />
-      </div>
-      <div className="projects-scroll--2">
-        <img src="https://i.imgur.com/Slr8Z3h.png" alt="" />
-      </div>
-      <div className="projects-scroll--3">
-        <img src="https://i.imgur.com/8HttLw2.png" alt="" />
-      </div>
-      <div className="projects-scroll--4">
-        <img src="https://i.imgur.com/usjHJk1.png" alt="" />
-      </div>
-      <div className="projects-scroll--5">
-        <img src="https://i.imgur.com/1zhRomx.png" alt="" />
-      </div>
-      <div className="projects-scroll--6">
-        <img src="https://i.imgur.com/nCkJp8d.png" alt="" />
-      </div>
-      <div className="projects-scroll--7">
-        <img src="https://i.imgur.com/Ot4zFET.png" alt="" />
-      </div>
-      <div className="projects-scroll--br-2">
-        <br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br />
-      </div>
-    </section>
-  )
-}
+    </div>
+  );
+};
 
-export default ProjectsScroll
+export default ProjectsScroll;

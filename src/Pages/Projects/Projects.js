@@ -9,24 +9,34 @@ const Projects = () => {
       className="projects-wrapper"
       initial={{ width: 0 }}
       animate={{ width: '100vw' }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.01 } }}
+      exit={{
+        x: window.innerWidth,
+        transition: { duration: 0.25 },
+      }}
     >
       <section className="projects-logo">
         <div className="projects-logo--icon">
           <Link to="/">
-            <img src="https://i.imgur.com/2NOaXQD.png" alt="logo" />
+            {/* <img src="https://i.imgur.com/2NOaXQD.png" alt="logo" /> */}
+            <font className="header-logo--type">PY</font>
           </Link>
         </div>
       </section>
-      <iframe
-        title="projectsFrame"
-        className="projects-scroll--iframe"
-        src="/projects-scroll"
-        width="703"
-        height="100%"
-        frameborder="0"
-      ></iframe>
+
+      <div className="iframe-wrapper">
+        <iframe
+          title="projectsFrame"
+          className="projects-scroll--iframe"
+          src="/projects-scroll"
+          width="703"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+      </div>
+
       <section className="projects-right-column">
+        <div className="projects-right-column--nav">Hamburger Icon</div>
+        <div className="projects-right-column--name"></div>
         <div className="projects-right-column--icons">
           <div className="projects-right-column--icons-github">
             <a
@@ -34,7 +44,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src="https://i.imgur.com/wBDZDho.png" alt="github" />
+              <img src="https://i.imgur.com/XfBtJMl.png" alt="github" />
             </a>
           </div>
           <div className="projects-right-column--icons-linkedin">
@@ -43,15 +53,9 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src="https://i.imgur.com/e2CyB9f.png" alt="linkedin" />
+              <img src="https://i.imgur.com/KKykbBT.png" alt="linkedin" />
             </a>
           </div>
-        </div>
-        <div className="projects-right-column--name">
-          <h1>Projects</h1>
-        </div>
-        <div className="projects-right-column--nav">
-          <Navbar />
         </div>
       </section>
     </motion.div>
