@@ -17,6 +17,28 @@ const ProjectsScroll = () => {
         <div className="project-2--right">
           <img src="https://i.imgur.com/Slr8Z3h.png" alt="" />
         </div>
+        <div className="project-3--left">
+          <img src="https://i.imgur.com/8HttLw2.png" alt="" />
+        </div>
+        <div className="project-3--right">
+          <font className="project-3--name">Skate React</font>
+          <font className="project-3--number">3</font>
+        </div>
+        <div className="project-4--left">
+          <font className="project-4--number">4</font>
+          <font className="project-4--name">Greetr Library</font>
+        </div>
+        <div className="project-4--right">
+          <img src="https://i.imgur.com/XoBYMyS.png" alt="" />
+        </div>
+        <div className="project-5--left">
+          <img src="https://i.imgur.com/wthaydW.png" alt="" />
+        </div>
+        <div className="project-5--right">
+          <font className="project-5--name">Task Tracker</font>
+          <font className="project-5--number">5</font>
+        </div>
+
         <div className="projects-scroll--br-2"></div>
       </div>
     </div>
