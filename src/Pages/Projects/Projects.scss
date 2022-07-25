@@ -51,14 +51,12 @@
 
 .iframe-wrapper {
   overflow: hidden;
-  max-width: 692px;
+  max-width: 688px;
 }
 
 .projects-scroll-wrapper {
   background-color: #252422;
   grid-area: projects-scroll;
-  border-left: 4px solid #000000;
-  border-right: 4px solid #000000;
   margin: 0;
   min-height: 100%;
 }
@@ -72,6 +70,8 @@
     'project-1-left project-1-right'
     'project-2-left project-2-right'
     'br-2 br-2';
+  border-left: 4px solid #000000;
+  border-right: 4px solid #000000;
 }
 
 .projects-scroll-br {
