@@ -16,10 +16,7 @@ const Projects = () => {
     >
       <section className="projects-logo">
         <div className="projects-logo--icon">
-          <Link to="/">
-            {/* <img src="https://i.imgur.com/2NOaXQD.png" alt="logo" /> */}
-            <font className="header-logo--type">PY</font>
-          </Link>
+          <Link to="/">PY</Link>
         </div>
       </section>
 

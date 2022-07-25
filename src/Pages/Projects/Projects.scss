@@ -1,9 +1,25 @@
-.header-logo--type {
+.projects-logo {
   font-weight: bold;
   font-size: 40px;
   letter-spacing: -3px;
-  color: #252422;
   position: relative;
+
+  a:link {
+    color: #252422;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #252422;
+  }
+
+  a:hover {
+    color: #e2a185;
+  }
+
+  a:active {
+    color: #252422;
+  }
 }
 
 .projects-wrapper {
@@ -35,7 +51,7 @@
 
 .iframe-wrapper {
   overflow: hidden;
-  max-width: 688px;
+  max-width: 692px;
 }
 
 .projects-scroll-wrapper {
