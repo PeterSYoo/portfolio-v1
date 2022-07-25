@@ -23,15 +23,32 @@
     z-index: 1;
   }
 
-  .header-icons {
-    gap: 50px;
-  }
-
-  .header-logo--type {
+  .header-logo {
     font-weight: bold;
     font-size: 40px;
     letter-spacing: -3px;
     color: #85b5e2;
+
+    a:link {
+      color: #85b5e2;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #85b5e2;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    a:active {
+      color: #85b5e2;
+    }
+  }
+
+  .header-icons {
+    gap: 50px;
   }
 
   .home-intro {
@@ -83,7 +100,7 @@
   }
 
   .home--name {
-    color: #c6e3ff;
+    color: #ffffff;
     font-size: 40px;
   }
 
@@ -112,19 +129,19 @@
     font-weight: 200;
     gap: 60px;
     padding-bottom: 44px;
-    color: #c6e3ff;
+    color: #ffffff;
   }
 }
 
 /* unvisited link */
 a:link {
-  color: #c6e3ff;
+  color: #ffffff;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #c6e3ff;
+  color: #ffffff;
 }
 
 /* mouse over link */
@@ -134,5 +151,5 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: #c6e3ff;
+  color: #ffffff;
 }

@@ -19,10 +19,7 @@ const Home = () => {
         <Particle />
         <div className="header">
           <section className="header-logo">
-            <Link to="/">
-              {/* <img src="https://i.imgur.com/IMEfuBC.png" alt="logo" /> */}
-              <font className="header-logo--type">PY</font>
-            </Link>
+            <Link to="/">PY</Link>
           </section>
           <section className="header-icons">
             <section className="header-icons--github">
