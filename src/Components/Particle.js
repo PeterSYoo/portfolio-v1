@@ -21,50 +21,106 @@ const Particle = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        detectRetina: false,
-        fpsLimit: 30,
-        interactivity: {
-          detectsOn: 'canvas',
-          events: {
-            resize: true,
-          },
-        },
+        fpsLimit: 60,
         particles: {
-          color: {
-            value: '#fff',
-          },
           number: {
+            value: 100,
             density: {
               enable: true,
-              area: 1080,
+              value_area: 800,
             },
-            limit: 0,
-            value: 400,
           },
-          opacity: {
-            animation: {
-              enable: true,
-              minimumValue: 0.05,
-              speed: 3.25,
-              sync: false,
-            },
-            random: {
-              enable: true,
-              minimumValue: 0.05,
-            },
-            value: 1,
+          color: {
+            value: '#85B5E2',
           },
           shape: {
-            type: 'circle',
+            type: 'polygon',
+            stroke: {
+              width: 0,
+              color: '#85B5E2',
+            },
+            polygon: {
+              sides: 3,
+            },
+          },
+          opacity: {
+            value: 1,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
           },
           size: {
-            random: {
+            value: 3,
+            random: true,
+            anim: {
               enable: true,
-              minimumValue: 0.5,
+              speed: 4.872463273808071,
+              size_min: 0.1,
+              sync: false,
             },
-            value: 1,
+          },
+          line_linked: {
+            enable: false,
+            distance: 150,
+            color: '#ffffff',
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 4,
+            direction: 'top-right',
+            random: false,
+            straight: true,
+            out_mode: 'out',
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
           },
         },
+        interactivity: {
+          detect_on: 'windows',
+          events: {
+            onhover: {
+              enable: true,
+              mode: 'bubble',
+            },
+            onclick: {
+              enable: false,
+              mode: 'push',
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 5,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 150,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
       }}
     />
   );

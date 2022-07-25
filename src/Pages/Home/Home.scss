@@ -59,40 +59,6 @@
     font-size: 40px;
   }
 
-  .star-1 {
-    position: absolute;
-    right: 25%;
-    bottom: 115%;
-    z-index: 1;
-  }
-
-  .star-2 {
-    position: absolute;
-    left: 5%;
-    bottom: 50%;
-    z-index: 1;
-  }
-
-  .star-3 {
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    z-index: 1;
-  }
-
-  .stars {
-    animation: sparkle 1.6s infinite ease-in-out alternate;
-  }
-
-  @keyframes sparkle {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.3;
-    }
-  }
-
   .home--avatar {
     position: relative;
     z-index: 1;
