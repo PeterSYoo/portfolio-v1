@@ -30,7 +30,7 @@
     rgba(60, 8, 8, 1) 100%
   );
   display: grid;
-  grid-template-columns: 0.5fr 688px 1fr;
+  grid-template-columns: 0.5fr 680px 1fr;
   grid-template-rows: 1fr;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
@@ -70,8 +70,8 @@
     'project-1-left project-1-right'
     'project-2-left project-2-right'
     'br-2 br-2';
-  border-left: 4px solid #000000;
-  border-right: 4px solid #000000;
+  // border-left: 4px solid #000000;
+  // border-right: 4px solid #000000;
 }
 
 .projects-scroll-br {
