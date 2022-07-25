@@ -1,6 +1,5 @@
 import './About.scss';
 import { motion } from 'framer-motion';
-import Particle from '../../Components/Particle';
 
 const About = () => {
   return (
@@ -10,9 +9,7 @@ const About = () => {
       animate={{ width: '80vw' }}
       exit={{ x: window.innerWidth, transition: { duration: 0.01 } }}
     >
-      <div className="tsparticles">
-        <Particle />
-      </div>
+      <div className="tsparticles"></div>
       <section className="about-content">
         <h1>About</h1>
         <p>

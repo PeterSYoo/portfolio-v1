@@ -3,6 +3,7 @@
   font-size: 40px;
   letter-spacing: -3px;
   color: #252422;
+  position: relative;
 }
 
 .projects-wrapper {
@@ -143,9 +144,30 @@
   grid-area: projects-right-column--name;
   text-align: center;
   padding-top: 100px;
-  font-size: 4em;
-  letter-spacing: -2px;
-  font-weight: 400;
+}
+
+.nav-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 1.5em;
+
+  a:link {
+    color: #252422;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #252422;
+  }
+
+  a:hover {
+    color: #e2a185;
+  }
+
+  a:active {
+    color: #252422;
+  }
 }
 
 .projects-right-column--icons {

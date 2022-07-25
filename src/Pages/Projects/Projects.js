@@ -35,8 +35,21 @@ const Projects = () => {
       </div>
 
       <section className="projects-right-column">
-        <div className="projects-right-column--nav">Hamburger Icon</div>
-        <div className="projects-right-column--name"></div>
+        <div className="projects-right-column--nav"></div>
+        <div className="projects-right-column--name">
+          <div className="nav-projects">
+            <Link to="/about">
+              <section className="nav-links--about">ABOUT</section>
+            </Link>
+            <Link to="/projects">
+              <section className="nav-links--projects">PROJECTS</section>
+            </Link>
+            <Link to="/contact">
+              <section className="nav-links--contact">CONTACT</section>
+            </Link>
+            <section className="nav-links--resume">RESUME</section>
+          </div>
+        </div>
         <div className="projects-right-column--icons">
           <div className="projects-right-column--icons-github">
             <a
