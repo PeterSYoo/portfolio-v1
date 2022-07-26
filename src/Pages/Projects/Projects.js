@@ -1,4 +1,3 @@
-import Navbar from '../../Components/Navbar';
 import { Link } from 'react-router-dom';
 import './Projects.scss';
 import { motion } from 'framer-motion';
@@ -16,7 +15,15 @@ const Projects = () => {
     >
       <section className="projects-logo">
         <div className="projects-logo--icon">
-          <Link to="/">PY</Link>
+          <Link to="/">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="projects-logo--btn"
+            >
+              <font className="projects-logo--text">PY</font>
+            </motion.button>
+          </Link>
         </div>
       </section>
 
@@ -27,7 +34,7 @@ const Projects = () => {
           src="/projects-scroll"
           width="703"
           height="100%"
-          frameborder="0"
+          frameBorder="0"
         ></iframe>
       </div>
 
@@ -36,15 +43,41 @@ const Projects = () => {
         <div className="projects-right-column--name">
           <div className="nav-projects">
             <Link to="/about">
-              <section className="nav-links--about">ABOUT</section>
+              <motion.section
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="projects-links--about"
+              >
+                ABOUT
+              </motion.section>
             </Link>
             <Link to="/projects">
-              <section className="nav-links--projects">PROJECTS</section>
+              <motion.section
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="projects-links--projects"
+              >
+                PROJECTS
+              </motion.section>
             </Link>
             <Link to="/contact">
-              <section className="nav-links--contact">CONTACT</section>
+              <motion.section
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="projects-links--contact"
+              >
+                CONTACT
+              </motion.section>
             </Link>
-            <section className="nav-links--resume">RESUME</section>
+            <section className="projects-links--resume">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="projects-resume"
+              >
+                RESUME
+              </motion.div>
+            </section>
           </div>
         </div>
         <div className="projects-right-column--icons">

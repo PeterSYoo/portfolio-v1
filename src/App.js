@@ -9,15 +9,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <header>
-        {location === '/projects' || location === '/' ? null : <Header />}
-      </header>
       <main>
         <AnimatedRoutes />
       </main>
-      <footer>
-        {location === '/projects' || location === '/' ? null : <Navbar />}
-      </footer>
     </div>
   );
 };

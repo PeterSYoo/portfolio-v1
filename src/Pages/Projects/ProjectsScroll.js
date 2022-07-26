@@ -1,7 +1,31 @@
+import { useState } from 'react';
+import Modal from './Modal';
+import { motion } from 'framer-motion';
+
 const ProjectsScroll = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [target, setTarget] = useState(null);
+  const openBodyModal = () => {
+    setTarget('modal-component-wrapper');
+    setIsOpen(true);
+  };
+  const openCardModal = () => {
+    setTarget('card');
+    setIsOpen(true);
+  };
+
   return (
     <div className="projects-scroll-wrapper">
       <div className="projects-scroll">
+        <Modal isOpen={isOpen} handleClose={() => setIsOpen(false)}>
+          I am the modal!!!!
+        </Modal>
+        <div className="button-container">
+          <button onClick={() => setIsOpen(true)}>Open body modal</button>
+          <button onClick={() => console.log('Open Card Modal')}>
+            Open card modal
+          </button>
+        </div>
         <div className="projects-scroll--br"></div>
         <div className="project-1--left">
           <img src="https://i.imgur.com/rQbdowK.png" alt="" />
@@ -38,6 +62,8 @@ const ProjectsScroll = () => {
           <font className="project-5--name">Task Tracker</font>
           <font className="project-5--number">5</font>
         </div>
+
+        <div className="Modal"></div>
 
         <div className="projects-scroll--br-2"></div>
       </div>

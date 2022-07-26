@@ -91,31 +91,31 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 1.15em;
-    font-weight: 400;
+    font-size: 1.25em;
+    font-weight: bold;
     gap: 60px;
     padding-bottom: 44px;
-    color: #ffffff;
+    color: #85b5e2;
   }
 }
 
 /* unvisited link */
 a:link {
-  color: #ffffff;
+  color: #85b5e2;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #ffffff;
+  color: #85b5e2;
 }
 
 /* mouse over link */
 a:hover {
-  color: #252422;
+  color: #ffffff;
 }
 
 /* selected link */
 a:active {
-  color: #ffffff;
+  color: #85b5e2;
 }
