@@ -24,20 +24,20 @@ const Particle = () => {
         fpsLimit: 60,
         particles: {
           number: {
-            value: 100,
+            value: 80,
             density: {
               enable: true,
-              value_area: 800,
+              value_area: 1200,
             },
           },
           color: {
-            value: '#85B5E2',
+            value: '#FFFFFF',
           },
           shape: {
             type: 'polygon',
             stroke: {
               width: 0,
-              color: '#85B5E2',
+              color: '#FFFFFF',
             },
             polygon: {
               sides: 3,
@@ -54,7 +54,7 @@ const Particle = () => {
             },
           },
           size: {
-            value: 3,
+            value: 2,
             random: true,
             anim: {
               enable: true,
@@ -73,7 +73,7 @@ const Particle = () => {
           move: {
             enable: true,
             speed: 4,
-            direction: 'top-right',
+            direction: 'bottom-right',
             random: false,
             straight: true,
             out_mode: 'out',
@@ -103,7 +103,7 @@ const Particle = () => {
             },
             bubble: {
               distance: 400,
-              size: 5,
+              size: 3,
               duration: 2,
               opacity: 8,
               speed: 3,

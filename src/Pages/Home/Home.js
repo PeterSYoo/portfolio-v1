@@ -26,17 +26,15 @@ const Home = () => {
             <Link to="/">PY</Link>
           </motion.section>
           <section className="header-icons">
-            <motion.section
-              className="header-icons--github"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
+            <section className="header-icons--github">
               <a
                 href="https://github.com/PeterSYoo"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                   src="https://i.imgur.com/MSzHASX.png"
                   alt="github"
                   onMouseOver={(e) =>
@@ -47,18 +45,16 @@ const Home = () => {
                   }
                 />
               </a>
-            </motion.section>
-            <motion.section
-              className="header-icons--linkedin"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
+            </section>
+            <section className="header-icons--linkedin">
               <a
                 href="https://www.linkedin.com/in/petersyoo/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
+                <motion.img
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                   src="https://i.imgur.com/6qF85FA.png"
                   alt="linkedin"
                   onMouseOver={(e) =>
@@ -69,7 +65,7 @@ const Home = () => {
                   }
                 />
               </a>
-            </motion.section>
+            </section>
           </section>
         </div>
         <div className="home-intro">
@@ -83,8 +79,10 @@ const Home = () => {
               />
             </Link>
           </div>
-          Hi! I am <font className="home--name">Peter Yoo</font>
-          <br />a software engineer
+          <section className="home--intro-text">
+            Hi! I am <font className="home--name">Peter Yoo</font>
+            <br />a software engineer
+          </section>
         </div>
       </div>
       <section className="home-bottom--wrapper">

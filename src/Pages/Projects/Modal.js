@@ -1,7 +1,4 @@
 import './Modal.scss';
-import { motion } from 'framer-motion';
-import Backdrop from './Backdrop';
-import ReactDOM from 'react-dom/client';
 import { useEffect } from 'react';
 import ReactPortal from './ReactPortal';
 

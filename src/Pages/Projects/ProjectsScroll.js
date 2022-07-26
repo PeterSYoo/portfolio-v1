@@ -1,34 +1,62 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Modal from './Modal';
 import { motion } from 'framer-motion';
+import Project1 from './Project1/Project1';
+import Project2 from './Project2/Project2';
 
 const ProjectsScroll = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [target, setTarget] = useState(null);
-  const openBodyModal = () => {
-    setTarget('modal-component-wrapper');
+  const [project, setProject] = useState('');
+
+  const ref = useRef();
+
+  const components = {
+    project1: Project1,
+    project2: Project2,
+  };
+
+  const openModal = (newProject) => {
+    setProject(newProject);
     setIsOpen(true);
   };
-  const openCardModal = () => {
-    setTarget('card');
-    setIsOpen(true);
+
+  // Hook
+  const useOnClickOutside = (ref, handler) => {
+    useEffect(() => {
+      const listener = (event) => {
+        // Do nothing if clicking ref's element or descendent elements
+        if (!ref.current || ref.current.contains(event.target)) {
+          return;
+        }
+        handler(event);
+      };
+      window.parent.document.addEventListener('mousedown', listener);
+      window.parent.document.addEventListener('touchstart', listener);
+      return () => {
+        window.parent.document.removeEventListener('mousedown', listener);
+        window.parent.document.removeEventListener('touchstart', listener);
+      };
+    }, [ref, handler]);
   };
+
+  useOnClickOutside(ref, () => setIsOpen(false));
 
   return (
     <div className="projects-scroll-wrapper">
       <div className="projects-scroll">
-        <Modal isOpen={isOpen} handleClose={() => setIsOpen(false)}>
-          I am the modal!!!!
-        </Modal>
-        <div className="button-container">
-          <button onClick={() => setIsOpen(true)}>Open body modal</button>
-          <button onClick={() => console.log('Open Card Modal')}>
-            Open card modal
-          </button>
+        <div ref={ref}>
+          <Modal isOpen={isOpen} handleClose={() => setIsOpen(false)}>
+            {project}
+          </Modal>
         </div>
         <div className="projects-scroll--br"></div>
         <div className="project-1--left">
-          <img src="https://i.imgur.com/rQbdowK.png" alt="" />
+          <img
+            src="https://i.imgur.com/rQbdowK.png"
+            alt=""
+            onClick={() => openModal(components.project1)}
+            style={{ cursor: 'pointer' }}
+          />
         </div>
         <div className="project-1--right">
           <font className="project-1--name">Random Lit</font>
@@ -39,7 +67,12 @@ const ProjectsScroll = () => {
           <font className="project-2--name">Tteok Bowl</font>
         </div>
         <div className="project-2--right">
-          <img src="https://i.imgur.com/Slr8Z3h.png" alt="" />
+          <img
+            src="https://i.imgur.com/Slr8Z3h.png"
+            alt=""
+            onClick={() => openModal(components.project2)}
+            style={{ cursor: 'pointer' }}
+          />
         </div>
         <div className="project-3--left">
           <img src="https://i.imgur.com/8HttLw2.png" alt="" />

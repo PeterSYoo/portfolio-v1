@@ -65,6 +65,11 @@
     margin: 0 0 40px 0;
   }
 
+  .home--intro-text {
+    position: relative;
+    z-index: 1;
+  }
+
   .home--name {
     color: #ffffff;
     font-size: 40px;

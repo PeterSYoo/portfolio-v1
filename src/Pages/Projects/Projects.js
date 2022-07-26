@@ -62,7 +62,9 @@ const Projects = () => {
                 whileTap={{ scale: 0.9 }}
                 className="projects-links--contact"
               >
-                <Link to="/contact">CONTACT</Link>
+                <Link to="/contact">
+                  <font>CONTACT</font>
+                </Link>
               </motion.div>
             </section>
             <section className="projects-links--resume">
@@ -83,7 +85,18 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src="https://i.imgur.com/XfBtJMl.png" alt="github" />
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                src="https://i.imgur.com/XfBtJMl.png"
+                alt="github"
+                onMouseOver={(e) =>
+                  (e.currentTarget.src = 'https://i.imgur.com/DtSygSN.png')
+                }
+                onMouseOut={(e) =>
+                  (e.currentTarget.src = 'https://i.imgur.com/XfBtJMl.png')
+                }
+              />
             </a>
           </div>
           <div className="projects-right-column--icons-linkedin">
@@ -92,7 +105,18 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src="https://i.imgur.com/KKykbBT.png" alt="linkedin" />
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                src="https://i.imgur.com/KKykbBT.png"
+                alt="linkedin"
+                onMouseOver={(e) =>
+                  (e.currentTarget.src = 'https://i.imgur.com/40C9Fit.png')
+                }
+                onMouseOut={(e) =>
+                  (e.currentTarget.src = 'https://i.imgur.com/KKykbBT.png')
+                }
+              />
             </a>
           </div>
         </div>
