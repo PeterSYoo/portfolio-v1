@@ -42,38 +42,34 @@ const Projects = () => {
         <div className="projects-right-column--nav"></div>
         <div className="projects-right-column--name">
           <div className="nav-projects">
-            <Link to="/about">
-              <motion.section
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="projects-links--about"
-              >
-                ABOUT
-              </motion.section>
-            </Link>
-            <Link to="/projects">
-              <motion.section
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="projects-links--projects"
-              >
-                PROJECTS
-              </motion.section>
-            </Link>
-            <Link to="/contact">
-              <motion.section
+            <motion.section
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="projects-links--about"
+            >
+              <Link to="/about">ABOUT</Link>
+            </motion.section>
+            <motion.section
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="projects-links--projects"
+            >
+              <Link to="/projects">PROJECTS</Link>
+            </motion.section>
+            <section>
+              <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="projects-links--contact"
               >
-                CONTACT
-              </motion.section>
-            </Link>
+                <Link to="/contact">CONTACT</Link>
+              </motion.div>
+            </section>
             <section className="projects-links--resume">
               <motion.div
+                className="projects-resume"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="projects-resume"
               >
                 RESUME
               </motion.div>

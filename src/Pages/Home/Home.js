@@ -18,41 +18,114 @@ const Home = () => {
       <div className="home-top--wrapper">
         <Particle />
         <div className="header">
-          <section className="header-logo">
+          <motion.section
+            className="header-logo"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <Link to="/">PY</Link>
-          </section>
+          </motion.section>
           <section className="header-icons">
-            <section className="header-icons--github">
+            <motion.section
+              className="header-icons--github"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <a
                 href="https://github.com/PeterSYoo"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="https://i.imgur.com/MSzHASX.png" alt="github" />
+                <img
+                  src="https://i.imgur.com/MSzHASX.png"
+                  alt="github"
+                  onMouseOver={(e) =>
+                    (e.currentTarget.src = 'https://i.imgur.com/c3qdUcC.png')
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.src = 'https://i.imgur.com/MSzHASX.png')
+                  }
+                />
               </a>
-            </section>
-            <section className="header-icons--linkedin">
+            </motion.section>
+            <motion.section
+              className="header-icons--linkedin"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
               <a
                 href="https://www.linkedin.com/in/petersyoo/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="https://i.imgur.com/6qF85FA.png" alt="linkedin" />
+                <img
+                  src="https://i.imgur.com/6qF85FA.png"
+                  alt="linkedin"
+                  onMouseOver={(e) =>
+                    (e.currentTarget.src = 'https://i.imgur.com/Jc11Ehk.png')
+                  }
+                  onMouseOut={(e) =>
+                    (e.currentTarget.src = 'https://i.imgur.com/6qF85FA.png')
+                  }
+                />
               </a>
-            </section>
+            </motion.section>
           </section>
         </div>
         <div className="home-intro">
           <div className="home--avatar">
-            <img src="https://i.imgur.com/WEtpP6J.png" alt="avatar" />
+            <Link to="/about">
+              <motion.img
+                src="https://i.imgur.com/WEtpP6J.png"
+                alt="avatar"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              />
+            </Link>
           </div>
           Hi! I am <font className="home--name">Peter Yoo</font>
+          <br />a software engineer
         </div>
       </div>
       <section className="home-bottom--wrapper">
-        <div className="home--title">a software engineer</div>
+        <div className="home--title"></div>
       </section>
-      <Navbar />
+      <div className="home-nav">
+        <Link to="/about">
+          <motion.section
+            className="home-links--about"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            ABOUT
+          </motion.section>
+        </Link>
+        <Link to="/projects">
+          <motion.section
+            className="home-links--projects"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            PROJECTS
+          </motion.section>
+        </Link>
+        <Link to="/contact">
+          <motion.section
+            className="home-links--contact"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            CONTACT
+          </motion.section>
+        </Link>
+        <motion.section
+          className="home-links--resume"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          RESUME
+        </motion.section>
+      </div>
     </motion.div>
   );
 };
