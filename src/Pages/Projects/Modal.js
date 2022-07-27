@@ -20,12 +20,7 @@ const Modal = ({
   return (
     <ReactPortal wrapperId={targetId}>
       <div className="modal" aria-modal role="alertdialog">
-        <div className="modal-content">
-          <button onClick={handleClose} className="close-btn">
-            X
-          </button>
-          {children}
-        </div>
+        <div className="modal-content">{children}</div>
       </div>
     </ReactPortal>
   );

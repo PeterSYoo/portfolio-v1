@@ -1,78 +1,89 @@
 import { useEffect, useRef, useState } from 'react';
-import Modal from './Modal';
 import { motion } from 'framer-motion';
-import Project1 from './Project1/Project1';
-import Project2 from './Project2/Project2';
+import './ProjectsScroll.scss';
 
 const ProjectsScroll = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [project, setProject] = useState('');
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [project, setProject] = useState('');
 
-  const ref = useRef();
+  // const ref = useRef();
 
-  const components = {
-    project1: Project1,
-    project2: Project2,
-  };
+  // const components = {
+  //   project1: Project1,
+  //   project2: Project2,
+  // };
 
-  const openModal = (newProject) => {
-    setProject(newProject);
-    setIsOpen(true);
-  };
+  // const openModal = (newProject) => {
+  //   setProject(newProject);
+  //   setIsOpen(true);
+  // };
 
-  // Hook
-  const useOnClickOutside = (ref, handler) => {
-    useEffect(() => {
-      const listener = (event) => {
-        // Do nothing if clicking ref's element or descendent elements
-        if (!ref.current || ref.current.contains(event.target)) {
-          return;
-        }
-        handler(event);
-      };
-      window.parent.document.addEventListener('mousedown', listener);
-      window.parent.document.addEventListener('touchstart', listener);
-      return () => {
-        window.parent.document.removeEventListener('mousedown', listener);
-        window.parent.document.removeEventListener('touchstart', listener);
-      };
-    }, [ref, handler]);
-  };
+  // // Hook
+  // const useOnClickOutside = (ref, handler) => {
+  //   useEffect(() => {
+  //     const listener = (event) => {
+  //       // Do nothing if clicking ref's element or descendent elements
+  //       if (!ref.current || ref.current.contains(event.target)) {
+  //         return;
+  //       }
+  //       handler(event);
+  //     };
+  //     window.parent.document.addEventListener('mousedown', listener);
+  //     window.parent.document.addEventListener('touchstart', listener);
+  //     return () => {
+  //       window.parent.document.removeEventListener('mousedown', listener);
+  //       window.parent.document.removeEventListener('touchstart', listener);
+  //     };
+  //   }, [ref, handler]);
+  // };
 
-  useOnClickOutside(ref, () => setIsOpen(false));
+  // useOnClickOutside(ref, () => setIsOpen(false));
 
   return (
     <div className="projects-scroll-wrapper">
       <div className="projects-scroll">
-        <div ref={ref}>
+        {/* <div ref={ref}>
           <Modal isOpen={isOpen} handleClose={() => setIsOpen(false)}>
             {project}
           </Modal>
-        </div>
+        </div> */}
         <div className="projects-scroll--br"></div>
         <div className="project-1--left">
           <img
             src="https://i.imgur.com/rQbdowK.png"
             alt=""
-            onClick={() => openModal(components.project1)}
-            style={{ cursor: 'pointer' }}
+            // onClick={() => openModal(components.project1)}
+            // style={{ cursor: 'pointer' }}
           />
         </div>
         <div className="project-1--right">
-          <font className="project-1--name">Random Lit</font>
-          <font className="project-1--number">1</font>
+          <font className="project-1--name">Random Lit /</font>
+          <div className="project-1--tech">
+            <font className="project-1--chevron">></font>
+            <font className="project-1--tech-list">
+              JavaScript, jQuery, ajax, Google Books API
+            </font>
+          </div>
+          <div className="project-1--btns">
+            <div className="live-demo">Live Demo</div>
+            <div className="github">Github</div>
+          </div>
         </div>
         <div className="project-2--left">
-          <font className="project-2--number">2</font>
-          <font className="project-2--name">Tteok Bowl</font>
+          <font className="project-2--name">Tteok Bowl /</font>
+          <div className="project-2--tech">
+            <font className="project-2--chevron">></font>
+            <font className="project-2--tech-list">
+              JavaScript, jQuery, ajax, Google Books API
+            </font>
+          </div>
+          <div className="project-2--btns">
+            <div className="github">Github</div>
+            <div className="live-demo">Live Demo</div>
+          </div>
         </div>
         <div className="project-2--right">
-          <img
-            src="https://i.imgur.com/Slr8Z3h.png"
-            alt=""
-            onClick={() => openModal(components.project2)}
-            style={{ cursor: 'pointer' }}
-          />
+          <img src="https://i.imgur.com/Slr8Z3h.png" alt="" />
         </div>
         <div className="project-3--left">
           <img src="https://i.imgur.com/8HttLw2.png" alt="" />

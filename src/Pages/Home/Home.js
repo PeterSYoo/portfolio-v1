@@ -23,7 +23,9 @@ const Home = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <Link to="/">PY</Link>
+            <Link to="/">
+              <div className="header-logo--btn"> PY</div>
+            </Link>
           </motion.section>
           <section className="header-icons">
             <section className="header-icons--github">
@@ -80,14 +82,14 @@ const Home = () => {
             </Link>
           </div>
           <section className="home--intro-text">
-            Hi! I am <font className="home--name">Peter Yoo</font>
-            <br />a software engineer
+            <img src="https://i.imgur.com/ItFsv3o.png" alt="name" />
+            <div className="home--intro-title">
+              <font>|&nbsp;&nbsp;software engineer</font>
+            </div>
           </section>
         </div>
       </div>
-      <section className="home-bottom--wrapper">
-        <div className="home--title"></div>
-      </section>
+      <div className="home-hr"></div>
       <div className="home-nav">
         <Link to="/about">
           <motion.section

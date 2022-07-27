@@ -1,0 +1,232 @@
+.iframe-wrapper {
+  overflow: hidden;
+  max-width: 688px;
+}
+
+.projects-scroll-wrapper {
+  background-color: #252422;
+  grid-area: projects-scroll;
+  margin: 0;
+  min-height: 100%;
+}
+
+.projects-scroll {
+  display: grid;
+  grid-template-columns: 340px 340px;
+  grid-template-rows: 150px 250px 250px 250px 250px 250px auto;
+  grid-template-areas:
+    'br-1 br-1'
+    'project-1-left project-1-right'
+    'project-2-left project-2-right'
+    'project-3-left project-3-right'
+    'project-4-left project-4-right'
+    'project-5-left project-5-right'
+    'br-2 br-2';
+  // border-left: 4px solid #000000;
+  // border-right: 4px solid #000000;
+}
+
+.projects-scroll-br {
+  grid-area: br-1;
+}
+
+.project-1--left {
+  grid-area: project-1-left;
+}
+
+.project-1--right {
+  grid-area: project-1-right;
+  color: #45443f;
+  display: flex;
+  flex-direction: column;
+
+  .project-1--name {
+    padding: 30px 0 0 43px;
+    font-size: 16px;
+  }
+
+  .project-1--tech {
+    padding: 5px 20px 0 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'left right';
+
+    .project-1--chevron {
+      grid-area: left;
+      font-size: 14px;
+    }
+
+    .project-1--tech-list {
+      grid-area: right;
+      padding: 0 0 0 5px;
+      font-size: 16px;
+    }
+  }
+
+  .project-1--btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    padding: 0 50px 40px 50px;
+
+    .live-demo {
+      border: 1px solid #e2a185;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
+      cursor: pointer;
+    }
+
+    .github {
+      background-color: #e2a185;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+  }
+}
+
+.project-2--left {
+  grid-area: project-2-left;
+  color: #45443f;
+  display: flex;
+  flex-direction: column;
+
+  .project-2--name {
+    padding: 30px 0 0 43px;
+    font-size: 16px;
+  }
+
+  .project-2--tech {
+    padding: 5px 20px 0 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'left right';
+
+    .project-2--chevron {
+      grid-area: left;
+      font-size: 14px;
+    }
+
+    .project-2--tech-list {
+      grid-area: right;
+      padding: 0 0 0 5px;
+      font-size: 16px;
+    }
+  }
+
+  .project-2--btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    padding: 0 50px 40px 50px;
+
+    .live-demo {
+      border: 1px solid #e2a185;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
+      cursor: pointer;
+    }
+
+    .github {
+      background-color: #e2a185;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+  }
+}
+
+.project-2--right {
+  grid-area: project-2-right;
+  color: #e2a185;
+}
+
+.project-3--left {
+  grid-area: project-3-left;
+}
+
+.project-3--right {
+  grid-area: project-3-right;
+  color: #45443f;
+  display: flex;
+  justify-content: space-between;
+
+  .project-3--name {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 46px 50px;
+    font-size: 20px;
+  }
+
+  .project-3--number {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 35px 15px 0;
+    font-size: 100px;
+    color: #45443f;
+  }
+}
+
+.project-4--left {
+  grid-area: project-4-left;
+  color: #45443f;
+  display: flex;
+  justify-content: space-between;
+
+  .project-4--number {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 15px 35px;
+    font-size: 100px;
+    color: #45443f;
+  }
+
+  .project-4--name {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 50px 46px 0;
+    font-size: 20px;
+  }
+}
+
+.project-4--right {
+  grid-area: project-4-right;
+  color: #e2a185;
+}
+
+.project-5--left {
+  grid-area: project-5-left;
+}
+
+.project-5--right {
+  grid-area: project-5-right;
+  color: #45443f;
+  display: flex;
+  justify-content: space-between;
+
+  .project-5--name {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 46px 50px;
+    font-size: 20px;
+  }
+
+  .project-5--number {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 35px 15px 0;
+    font-size: 100px;
+    color: #45443f;
+  }
+}
+
+.projects-scroll--br-2 {
+  grid-area: br-2;
+  margin-bottom: 500px;
+}

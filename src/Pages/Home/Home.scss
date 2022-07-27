@@ -23,32 +23,29 @@
     z-index: 1;
   }
 
+  .header-logo--btn {
+    background-color: #afd8ff;
+    padding: 20px 25px 20px 23px;
+    border-radius: 15px;
+    color: #252422;
+  }
+
+  .header-logo--btn:hover {
+    background-color: transparent;
+    padding: 20px 25px 20px 23px;
+    border-radius: 15px;
+    color: #ffffff;
+  }
+
   .header-logo {
     font-weight: bold;
     font-size: 40px;
     letter-spacing: -3px;
-    color: #85b5e2;
-
-    a:link {
-      color: #85b5e2;
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: #85b5e2;
-    }
-
-    a:hover {
-      color: #ffffff;
-    }
-
-    a:active {
-      color: #85b5e2;
-    }
   }
 
   .header-icons {
     gap: 45px;
+    padding: 25px 0 0 0;
   }
 
   .home-intro {
@@ -68,41 +65,35 @@
   .home--intro-text {
     position: relative;
     z-index: 1;
+    margin-top: -125px;
+    display: flex;
+    justify-content: center;
   }
 
-  .home--name {
-    color: #ffffff;
-    font-size: 40px;
-  }
-
-  .home-bottom--wrapper {
+  .home--intro-title {
     position: relative;
     z-index: 1;
+    font-weight: 200;
+    padding: 75px 0 0 25px;
+    color: #ffffff;
   }
 
-  .home--title {
-    font-size: 40px;
-    text-align: center;
+  .home-hr {
   }
 
   .home-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     font-size: 1.25em;
-    font-weight: bold;
+    font-weight: 400;
     gap: 75px;
-    padding: 44px 0 144px 0;
+    padding: 25px 0 144px 0;
     color: #afd8ff;
-    background: rgb(133, 181, 226);
-    background: linear-gradient(
-      142deg,
-      rgba(133, 181, 226, 1) 0%,
-      rgba(8, 19, 60, 1) 100%
-    );
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
   }
 }
 
