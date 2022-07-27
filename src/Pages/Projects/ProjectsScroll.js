@@ -135,7 +135,9 @@ const ProjectsScroll = () => {
           <img src="https://i.imgur.com/8HttLw2.png" alt="" />
         </div>
         <div className="project-3--right">
-          <font className="project-3--name">Skate React</font>
+          <font className="project-3--name">
+            Skate React - Lead Frontend Developer
+          </font>
           <div className="project-3--tech">
             <font className="project-3--tech-list">
               JavaScript, MongoDB, EJS, React, Node.js
