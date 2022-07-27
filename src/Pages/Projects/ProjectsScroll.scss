@@ -13,7 +13,7 @@
 .projects-scroll {
   display: grid;
   grid-template-columns: 340px 340px;
-  grid-template-rows: 150px 250px 250px 250px 250px 250px auto;
+  grid-template-rows: 150px 250px 250px 250px 250px 250px 250px 250px auto;
   grid-template-areas:
     'br-1 br-1'
     'project-1-left project-1-right'
@@ -21,9 +21,9 @@
     'project-3-left project-3-right'
     'project-4-left project-4-right'
     'project-5-left project-5-right'
+    'project-6-left project-6-right'
+    'project-7-left project-7-right'
     'br-2 br-2';
-  // border-left: 4px solid #000000;
-  // border-right: 4px solid #000000;
 }
 
 .projects-scroll-br {
@@ -36,29 +36,20 @@
 
 .project-1--right {
   grid-area: project-1-right;
-  color: #45443f;
+  color: #6c6b64;
   display: flex;
   flex-direction: column;
 
   .project-1--name {
-    padding: 30px 0 0 43px;
+    padding: 40px 0 0 40px;
     font-size: 16px;
+    color: #84837c;
   }
 
   .project-1--tech {
-    padding: 5px 20px 0 30px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas: 'left right';
-
-    .project-1--chevron {
-      grid-area: left;
-      font-size: 14px;
-    }
+    padding: 15px 40px 0 40px;
 
     .project-1--tech-list {
-      grid-area: right;
-      padding: 0 0 0 5px;
       font-size: 16px;
     }
   }
@@ -68,21 +59,39 @@
     justify-content: space-between;
     align-items: flex-end;
     height: 100%;
-    padding: 0 50px 40px 50px;
+    padding: 0 43px 40px 43px;
 
     .live-demo {
-      border: 1px solid #e2a185;
+      border: 1px solid #84837c;
       padding: 10px 15px 10px 15px;
       border-radius: 5px;
-      color: #e2a185;
+      color: #84837c;
+      cursor: pointer;
+    }
+
+    .live-demo:hover {
+      background-color: #e2a185;
+      border: 0;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
       cursor: pointer;
     }
 
     .github {
-      background-color: #e2a185;
+      background-color: #84837c;
       padding: 10px 15px 10px 15px;
       border-radius: 5px;
       color: #252422;
+      cursor: pointer;
+    }
+
+    .github:hover {
+      border: 1px solid #e2a185;
+      background-color: transparent;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
       cursor: pointer;
     }
   }
@@ -90,29 +99,20 @@
 
 .project-2--left {
   grid-area: project-2-left;
-  color: #45443f;
+  color: #6c6b64;
   display: flex;
   flex-direction: column;
 
   .project-2--name {
-    padding: 30px 0 0 43px;
+    padding: 40px 0 0 40px;
     font-size: 16px;
+    color: #84837c;
   }
 
   .project-2--tech {
-    padding: 5px 20px 0 30px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas: 'left right';
-
-    .project-2--chevron {
-      grid-area: left;
-      font-size: 14px;
-    }
+    padding: 15px 40px 0 40px;
 
     .project-2--tech-list {
-      grid-area: right;
-      padding: 0 0 0 5px;
       font-size: 16px;
     }
   }
@@ -122,21 +122,39 @@
     justify-content: space-between;
     align-items: flex-end;
     height: 100%;
-    padding: 0 50px 40px 50px;
+    padding: 0 43px 40px 43px;
 
     .live-demo {
-      border: 1px solid #e2a185;
+      border: 1px solid #84837c;
       padding: 10px 15px 10px 15px;
       border-radius: 5px;
-      color: #e2a185;
+      color: #84837c;
+      cursor: pointer;
+    }
+
+    .live-demo:hover {
+      background-color: #e2a185;
+      border: 0;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
       cursor: pointer;
     }
 
     .github {
-      background-color: #e2a185;
+      background-color: #84837c;
       padding: 10px 15px 10px 15px;
       border-radius: 5px;
       color: #252422;
+      cursor: pointer;
+    }
+
+    .github:hover {
+      border: 1px solid #e2a185;
+      background-color: transparent;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
       cursor: pointer;
     }
   }
@@ -144,7 +162,7 @@
 
 .project-2--right {
   grid-area: project-2-right;
-  color: #e2a185;
+  color: #84837c;
 }
 
 .project-3--left {
@@ -153,51 +171,133 @@
 
 .project-3--right {
   grid-area: project-3-right;
-  color: #45443f;
+  color: #6c6b64;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   .project-3--name {
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 46px 50px;
-    font-size: 20px;
+    padding: 40px 0 0 40px;
+    font-size: 16px;
+    color: #84837c;
   }
 
-  .project-3--number {
+  .project-3--tech {
+    padding: 15px 40px 0 40px;
+
+    .project-3--tech-list {
+      font-size: 16px;
+    }
+  }
+
+  .project-3--btns {
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
-    padding: 0 35px 15px 0;
-    font-size: 100px;
-    color: #45443f;
+    height: 100%;
+    padding: 0 43px 40px 43px;
+
+    .live-demo {
+      border: 1px solid #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #84837c;
+      cursor: pointer;
+    }
+
+    .live-demo:hover {
+      background-color: #e2a185;
+      border: 0;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github {
+      background-color: #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github:hover {
+      border: 1px solid #e2a185;
+      background-color: transparent;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
+      cursor: pointer;
+    }
   }
 }
 
 .project-4--left {
   grid-area: project-4-left;
-  color: #45443f;
+  color: #6c6b64;
   display: flex;
-  justify-content: space-between;
-
-  .project-4--number {
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 15px 35px;
-    font-size: 100px;
-    color: #45443f;
-  }
+  flex-direction: column;
 
   .project-4--name {
+    padding: 40px 0 0 40px;
+    font-size: 16px;
+    color: #84837c;
+  }
+
+  .project-4--tech {
+    padding: 15px 40px 0 40px;
+
+    .project-4--tech-list {
+      font-size: 16px;
+    }
+  }
+
+  .project-4--btns {
     display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
-    padding: 0 50px 46px 0;
-    font-size: 20px;
+    height: 100%;
+    padding: 0 43px 40px 43px;
+
+    .live-demo {
+      border: 1px solid #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #84837c;
+      cursor: pointer;
+    }
+
+    .live-demo:hover {
+      background-color: #e2a185;
+      border: 0;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github {
+      background-color: #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github:hover {
+      border: 1px solid #e2a185;
+      background-color: transparent;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
+      cursor: pointer;
+    }
   }
 }
 
 .project-4--right {
   grid-area: project-4-right;
-  color: #e2a185;
+  color: #84837c;
 }
 
 .project-5--left {
@@ -206,23 +306,199 @@
 
 .project-5--right {
   grid-area: project-5-right;
-  color: #45443f;
+  color: #6c6b64;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   .project-5--name {
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 46px 50px;
-    font-size: 20px;
+    padding: 40px 0 0 40px;
+    font-size: 16px;
+    color: #84837c;
   }
 
-  .project-5--number {
+  .project-5--tech {
+    padding: 15px 40px 0 40px;
+
+    .project-5--tech-list {
+      font-size: 16px;
+    }
+  }
+
+  .project-5--btns {
     display: flex;
+    justify-content: space-between;
     align-items: flex-end;
-    padding: 0 35px 15px 0;
-    font-size: 100px;
-    color: #45443f;
+    height: 100%;
+    padding: 0 43px 40px 43px;
+
+    .live-demo {
+      border: 1px solid #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #84837c;
+      cursor: pointer;
+    }
+
+    .live-demo:hover {
+      background-color: #e2a185;
+      border: 0;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github {
+      background-color: #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github:hover {
+      border: 1px solid #e2a185;
+      background-color: transparent;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
+      cursor: pointer;
+    }
+  }
+}
+
+.project-6--left {
+  grid-area: project-6-left;
+  color: #6c6b64;
+  display: flex;
+  flex-direction: column;
+
+  .project-6--name {
+    padding: 40px 0 0 40px;
+    font-size: 16px;
+    color: #84837c;
+  }
+
+  .project-6--tech {
+    padding: 15px 40px 0 40px;
+
+    .project-6--tech-list {
+      font-size: 16px;
+    }
+  }
+
+  .project-6--btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    padding: 0 43px 40px 43px;
+
+    .live-demo {
+      border: 1px solid #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #84837c;
+      cursor: pointer;
+    }
+
+    .live-demo:hover {
+      background-color: #e2a185;
+      border: 0;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github {
+      background-color: #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github:hover {
+      border: 1px solid #e2a185;
+      background-color: transparent;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
+      cursor: pointer;
+    }
+  }
+}
+
+.project-6--right {
+  grid-area: project-6-right;
+  color: #84837c;
+}
+
+.project-7--left {
+  grid-area: project-7-left;
+}
+
+.project-7--right {
+  grid-area: project-7-right;
+  color: #6c6b64;
+  display: flex;
+  flex-direction: column;
+
+  .project-7--name {
+    padding: 40px 0 0 40px;
+    font-size: 16px;
+    color: #84837c;
+  }
+
+  .project-7--tech {
+    padding: 15px 40px 0 40px;
+
+    .project-7--tech-list {
+      font-size: 16px;
+    }
+  }
+
+  .project-7--btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    padding: 0 43px 40px 43px;
+
+    .live-demo {
+      border: 1px solid #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #84837c;
+      cursor: pointer;
+    }
+
+    .live-demo:hover {
+      background-color: #e2a185;
+      border: 0;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github {
+      background-color: #84837c;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #252422;
+      cursor: pointer;
+    }
+
+    .github:hover {
+      border: 1px solid #e2a185;
+      background-color: transparent;
+      padding: 10px 15px 10px 15px;
+      border-radius: 5px;
+      color: #e2a185;
+      cursor: pointer;
+    }
   }
 }
 

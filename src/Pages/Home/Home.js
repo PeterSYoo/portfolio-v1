@@ -71,6 +71,9 @@ const Home = () => {
           </section>
         </div>
         <div className="home-intro">
+          <div className="home--avatar-bg">
+            <img src="https://i.imgur.com/vnh4K8V.png" alt="avatarbg" />
+          </div>
           <div className="home--avatar">
             <Link to="/about">
               <motion.img
@@ -84,7 +87,7 @@ const Home = () => {
           <section className="home--intro-text">
             <img src="https://i.imgur.com/ItFsv3o.png" alt="name" />
             <div className="home--intro-title">
-              <font>|&nbsp;&nbsp;software engineer</font>
+              <font>&nbsp;|&nbsp;&nbsp;&nbsp;software engineer</font>
             </div>
           </section>
         </div>

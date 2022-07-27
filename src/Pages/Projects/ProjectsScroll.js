@@ -57,29 +57,75 @@ const ProjectsScroll = () => {
           />
         </div>
         <div className="project-1--right">
-          <font className="project-1--name">Random Lit /</font>
+          <font className="project-1--name">Random Lit</font>
           <div className="project-1--tech">
-            <font className="project-1--chevron">></font>
             <font className="project-1--tech-list">
               JavaScript, jQuery, ajax, Google Books API
             </font>
           </div>
           <div className="project-1--btns">
-            <div className="live-demo">Live Demo</div>
-            <div className="github">Github</div>
+            <a
+              href="https://randomlit.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="live-demo"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Live Demo
+              </motion.div>
+            </a>
+            <a
+              href="https://github.com/PeterSYoo/randomBookGenreGenerator"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="github"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Github
+              </motion.div>
+            </a>
           </div>
         </div>
         <div className="project-2--left">
-          <font className="project-2--name">Tteok Bowl /</font>
+          <font className="project-2--name">Tteok Bowl</font>
           <div className="project-2--tech">
-            <font className="project-2--chevron">></font>
             <font className="project-2--tech-list">
-              JavaScript, jQuery, ajax, Google Books API
+              JavaScript, jQuery, Node.js, Mongoose, MongoDB, EJS
             </font>
           </div>
           <div className="project-2--btns">
-            <div className="github">Github</div>
-            <div className="live-demo">Live Demo</div>
+            <a
+              href="https://warm-brook-32210.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="live-demo"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Live Demo
+              </motion.div>
+            </a>
+            <a
+              href="https://github.com/PeterSYoo/tteokBowl"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="github"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Github
+              </motion.div>
+            </a>
           </div>
         </div>
         <div className="project-2--right">
@@ -90,21 +136,186 @@ const ProjectsScroll = () => {
         </div>
         <div className="project-3--right">
           <font className="project-3--name">Skate React</font>
-          <font className="project-3--number">3</font>
+          <div className="project-3--tech">
+            <font className="project-3--tech-list">
+              JavaScript, MongoDB, EJS, React, Node.js
+            </font>
+          </div>
+          <div className="project-3--btns">
+            <a
+              href="https://skate-react.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="live-demo"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Live Demo
+              </motion.div>
+            </a>
+            <a
+              href="https://github.com/abacqu/skate-shop-frontend"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="github"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Github
+              </motion.div>
+            </a>
+          </div>
         </div>
         <div className="project-4--left">
-          <font className="project-4--number">4</font>
           <font className="project-4--name">Greetr Library</font>
+          <div className="project-4--tech">
+            <font className="project-4--tech-list">JavaScript, jQuery</font>
+          </div>
+          <div className="project-4--btns">
+            {/* <a href="" target="_blank" rel="noreferrer">
+            <motion.div
+              className="live-demo"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Live Demo
+            </motion.div>
+            </a> */}
+            <a
+              href="https://github.com/PeterSYoo/greetr-framework"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="github"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Github
+              </motion.div>
+            </a>
+          </div>
         </div>
         <div className="project-4--right">
           <img src="https://i.imgur.com/XoBYMyS.png" alt="" />
         </div>
         <div className="project-5--left">
-          <img src="https://i.imgur.com/wthaydW.png" alt="" />
+          <img src="https://i.imgur.com/dq5M6Eg.png" alt="" />
         </div>
         <div className="project-5--right">
-          <font className="project-5--name">Task Tracker</font>
-          <font className="project-5--number">5</font>
+          <font className="project-5--name">Finch Collector</font>
+          <div className="project-5--tech">
+            <font className="project-5--tech-list">
+              Python, JavaScript, Django, PostgreSQL, AWS, Materialize
+            </font>
+          </div>
+          <div className="project-5--btns">
+            <a
+              href="https://finch-collector-py.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="live-demo"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Live Demo
+              </motion.div>
+            </a>
+            <a
+              href="https://github.com/PeterSYoo/finch_collector"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="github"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Github
+              </motion.div>
+            </a>
+          </div>
+        </div>
+        <div className="project-6--left">
+          <font className="project-6--name">Task Tracker</font>
+          <div className="project-6--tech">
+            <font className="project-6--tech-list">
+              Python, JavaScript, Django, PostgreSQL, AWS, Materialize
+            </font>
+          </div>
+          <div className="project-6--btns">
+            <a
+              href="https://task-tracker-peter.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="live-demo"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Live Demo
+              </motion.div>
+            </a>
+            <a
+              href="https://github.com/PeterSYoo/task_tracker"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="github"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Github
+              </motion.div>
+            </a>
+          </div>
+        </div>
+        <div className="project-6--right">
+          <img src="https://i.imgur.com/wthaydW.png" alt="" />
+        </div>
+        <div className="project-7--left">
+          <img src="https://i.imgur.com/omdbcKt.png" alt="" />
+        </div>
+        <div className="project-7--right">
+          <font className="project-7--name">Code Journal</font>
+          <div className="project-7--tech">
+            <font className="project-7--tech-list">
+              React, TypeScript, Redux, ESBuild, Axios, localForage, Monaco
+              Editor, React MD Editor, Immer, Lerna
+            </font>
+          </div>
+          <div className="project-7--btns">
+            {/* <a href="" target="_blank" rel="noreferrer">
+            <motion.div
+              className="live-demo"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Live Demo
+            </motion.div>
+            </a> */}
+            <a
+              href="https://github.com/PeterSYoo/code-journal"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <motion.div
+                className="github"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Github
+              </motion.div>
+            </a>
+          </div>
         </div>
 
         <div className="Modal"></div>
