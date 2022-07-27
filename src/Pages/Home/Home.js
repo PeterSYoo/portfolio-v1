@@ -18,15 +18,20 @@ const Home = () => {
       <div className="home-top--wrapper">
         <Particle />
         <div className="header">
-          <motion.section
-            className="header-logo"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <Link to="/">
-              <div className="header-logo--btn"> PY</div>
-            </Link>
-          </motion.section>
+          <section className="header-logo">
+            <div className="header-logo--icon">
+              <Link to="/">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="header-logo--btn"
+                >
+                  <font className="header-logo--text">PY</font>
+                </motion.button>
+              </Link>
+            </div>
+          </section>
+
           <section className="header-icons">
             <section className="header-icons--github">
               <a
@@ -71,9 +76,9 @@ const Home = () => {
           </section>
         </div>
         <div className="home-intro">
-          <div className="home--avatar-bg">
+          {/* <div className="home--avatar-bg">
             <img src="https://i.imgur.com/vnh4K8V.png" alt="avatarbg" />
-          </div>
+          </div> */}
           <div className="home--avatar">
             <Link to="/about">
               <motion.img

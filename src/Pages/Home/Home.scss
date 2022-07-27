@@ -24,23 +24,35 @@
   }
 
   .header-logo--btn {
-    background-color: #afd8ff;
+    border: 0;
+    background-color: #85b5e2;
+    cursor: pointer;
     padding: 20px 25px 20px 23px;
     border-radius: 15px;
-    color: #252422;
   }
 
   .header-logo--btn:hover {
+    border: 0;
     background-color: transparent;
+    cursor: pointer;
     padding: 20px 25px 20px 23px;
     border-radius: 15px;
-    color: #ffffff;
+
+    .header-logo--text {
+      font-weight: bold;
+      font-size: 35px;
+      letter-spacing: -3px;
+      position: relative;
+      color: #ffffff;
+    }
   }
 
-  .header-logo {
+  .header-logo--text {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: -3px;
+    position: relative;
+    color: #252422;
   }
 
   .header-icons {
